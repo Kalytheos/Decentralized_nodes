@@ -247,12 +247,3 @@ Las contribuciones son bienvenidas. Por favor:
 ## 📄 Licencia
 
 Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](LICENSE).
-
-## 👤 Autor
-
-Tu nombre - [@tu_usuario](https://github.com/tu_usuario)
-
-## 🙏 Agradecimientos
-
-- Inspirado en la "Oda a la Alegría" (An die Freude) de Friedrich Schiller
-- Concepto basado en redes peer-to-peer descentralizadas
