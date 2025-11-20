@@ -1,0 +1,93 @@
+version: '3'
+services:
+  N0:
+    build: .
+    image: nodos_n0
+    container_name: nodos_n0
+    volumes:
+      - ./N0/frase.py:/app/frase.py
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_NAME=N0
+      - NODE_PORT=5000
+  N1:
+    build: .
+    image: nodos_n1
+    container_name: nodos_n1
+    volumes:
+      - ./N1/frase.py:/app/frase.py
+    ports:
+      - "5001:5001"
+    environment:
+      - NODE_NAME=N1
+      - NODE_PORT=5001
+  N2:
+    build: .
+    image: nodos_n2
+    container_name: nodos_n2
+    volumes:
+      - ./N2/frase.py:/app/frase.py
+    ports:
+      - "5002:5002"
+    environment:
+      - NODE_NAME=N2
+      - NODE_PORT=5002
+  N3:
+    build: .
+    image: nodos_n3
+    container_name: nodos_n3
+    volumes:
+      - ./N3/frase.py:/app/frase.py
+    ports:
+      - "5003:5003"
+    environment:
+      - NODE_NAME=N3
+      - NODE_PORT=5003
+  N4:
+    build: .
+    image: nodos_n4
+    container_name: nodos_n4
+    volumes:
+      - ./N4/frase.py:/app/frase.py
+    ports:
+      - "5004:5004"
+    environment:
+      - NODE_NAME=N4
+      - NODE_PORT=5004
+  N5:
+    build: .
+    image: nodos_n5
+    container_name: nodos_n5
+    volumes:
+      - ./N5/frase.py:/app/frase.py
+    ports:
+      - "5005:5005"
+    environment:
+      - NODE_NAME=N5
+      - NODE_PORT=5005
+  N6:
+    build: .
+    image: nodos_n6
+    container_name: nodos_n6
+    volumes:
+      - ./N6/frase.py:/app/frase.py
+    ports:
+      - "5006:5006"
+    environment:
+      - NODE_NAME=N6
+      - NODE_PORT=5006
+  N7:
+    build: .
+    image: nodos_n7
+    container_name: nodos_n7
+    volumes:
+      - ./N7/frase.py:/app/frase.py
+    ports:
+      - "5007:5007"
+    environment:
+      - NODE_NAME=N7
+      - NODE_PORT=5007
+networks:
+  default:
+    driver: bridge
